@@ -20,6 +20,10 @@ int main(int argc, char ** argv)
 #endif
 	try
 	{
+		json body="";
+		bool flag = body.is_null();
+		flag = body.empty();
+
 		// create object from string literal
 		auto jsonStr1 = "{\"name\": \"中国\", \"happy\": true, \"pi\": 3.141 }"_json;
 		auto jsonStr2 = R"(
